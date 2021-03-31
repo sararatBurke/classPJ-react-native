@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   headText:{
-    color: '#2b373b',
+    color: '#252F33',
     fontWeight: 'bold',
     fontFamily: 'Georgia',
     fontSize: 40,
@@ -86,8 +86,8 @@ const styles = StyleSheet.create({
   subHead:{
     color: '#daeff1',
     fontWeight: 'bold',
-    fontFamily: 'Times New Roman',
-    fontSize: 18,
+    fontFamily: 'Georgia',
+    fontSize: 16,
     marginLeft: 80, 
   },
 
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   },
 
   nav:{
-    flex: 0.1,
+    flex: 0.09,
     backgroundColor: '#cef',
     width: '100%',
 
@@ -111,16 +111,16 @@ const styles = StyleSheet.create({
 
   navButton:{
     marginHorizontal: 30,
-    marginTop: 12,
+    paddingTop: 12,
     fontFamily:'Helvetica',
-    color: '#2C4969',
+    color: '#252F33',
    
-    fontSize: 20,
+    fontSize: 18,
     justifyContent: 'center',
   },
 
   body: {
-    flex: 0.9,
+    flex: 1,
     width: '100%',
     backgroundColor: '#869c81', 
     padding: 20, 
