@@ -23,13 +23,13 @@ export default function App() {
           style={styles.navBG}>
 
           <ScrollView    
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}>
-            <Text>Home</Text>
-            <Text>About</Text>
-            <Text>Portfolio</Text>
-            <Text>Service</Text>
-            <Text>Contact</Text>
+            horizontal={true} 
+            showsHorizontalScrollIndicator={false}  >
+            <Text style={styles.navButton}>Home</Text>
+            <Text style={styles.navButton}>About</Text>
+            <Text style={styles.navButton}>Portfolio</Text>
+            <Text style={styles.navButton}>Service</Text>
+            <Text style={styles.navButton}>Contact</Text>
           </ScrollView>
 
         </LinearGradient>
@@ -67,31 +67,28 @@ const styles = StyleSheet.create({
   },
 
   header:{
-    flex: 0.2,
-    backgroundColor: '#98c5d6',
-    width: '100%',
-    
+    backgroundColor: '#93c2cc',
+    width: '100%', 
+    padding :20, 
   },
   headTextContainer:{
-    width: '30%',
-    padding: 20,
+    marginTop: 30,
   },
   headText:{
     color: '#2b373b',
     fontWeight: 'bold',
-    fontFamily: 'Lato',
+    fontFamily: 'Georgia',
     fontSize: 40,
-    textAlign: 'center',
-    
+
+    marginLeft: 35, 
   },
 
   subHead:{
     color: '#daeff1',
     fontWeight: 'bold',
-    fontFamily: 'Lato',
-    fontSize: 16,
-    textAlign: 'center',
-
+    fontFamily: 'Times New Roman',
+    fontSize: 18,
+    marginLeft: 80, 
   },
 
   navBG: {
@@ -102,24 +99,36 @@ const styles = StyleSheet.create({
 
   nav:{
     flex: 0.1,
-    backgroundColor: '#cef' ,
+    backgroundColor: '#cef',
     width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    shadowColor: '#161a1c',
-    shadowOpacity: 0.8,
 
+    shadowColor: '#161a1c',
+    shadowOpacity: 1,
+    shadowRadius: 5,
+    shadowOffset: {width:2, height:1},
+    justifyContent: 'center'
+  },
+
+  navButton:{
+    marginHorizontal: 30,
+    marginTop: 12,
+    fontFamily:'Helvetica',
+    color: '#2C4969',
+   
+    fontSize: 20,
+    justifyContent: 'center',
   },
 
   body: {
-    flex: 0.7,
+    flex: 0.9,
     width: '100%',
     backgroundColor: '#869c81', 
     padding: 20, 
+    
   },
 
   bodyHead:{
-    fontFamily:'Arial',
+    fontFamily:'Verdana',
     color: '#2C4969',
     fontWeight: 'bold',
     fontSize: 30,
