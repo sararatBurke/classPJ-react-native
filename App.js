@@ -1,19 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
+import { ScaledSheet } from 'react-native-size-matters';
 
 
 export default function App() {
 
   return (
   <View style={styles.container}>
+
       <View style={styles.header}>
         {/***** header *****/}
-        <View style={styles.headTextContainer}>
+      
           <Text style={styles.headText}>A Subtle Green</Text>
           <Text style={styles.subHead}>A design by Bryant Smith</Text>
-        </View> 
+       
       </View>
 
       <View style={styles.nav}>
@@ -57,7 +59,7 @@ export default function App() {
 }
 
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
@@ -69,36 +71,33 @@ const styles = StyleSheet.create({
   header:{
     backgroundColor: '#93c2cc',
     width: '100%', 
-    padding :20, 
+    padding :'10@s', 
   },
-  headTextContainer:{
-    marginTop: 30,
-  },
+  
   headText:{
     color: '#252F33',
     fontWeight: 'bold',
     fontFamily: 'Georgia',
-    fontSize: 40,
+    fontSize: '20@s',
 
-    marginLeft: 35, 
+    marginLeft: '15@s',
+    marginTop: '10@s' 
   },
 
   subHead:{
     color: '#daeff1',
     fontWeight: 'bold',
     fontFamily: 'Georgia',
-    fontSize: 16,
-    marginLeft: 80, 
+    fontSize: '8@s',
+    marginLeft: '30@s', 
   },
 
   navBG: {
-    flex: 1,
-    paddingLeft: 15,
-    paddingRight: 15,
+    height: '18@s',
+    paddingHorizontal: '10@s',
   },
 
   nav:{
-    flex: 0.09,
     backgroundColor: '#cef',
     width: '100%',
 
@@ -110,12 +109,11 @@ const styles = StyleSheet.create({
   },
 
   navButton:{
-    marginHorizontal: 30,
-    paddingTop: 12,
+    marginHorizontal: '15@s',
+    paddingTop: '5@s',
     fontFamily:'Helvetica',
+    fontSize: '8@s',
     color: '#252F33',
-   
-    fontSize: 18,
     justifyContent: 'center',
   },
 
@@ -123,7 +121,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     backgroundColor: '#869c81', 
-    padding: 20, 
+    padding: '12@s', 
     
   },
 
@@ -131,13 +129,14 @@ const styles = StyleSheet.create({
     fontFamily:'Verdana',
     color: '#2C4969',
     fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: '15@s',
   },
 
   content:{
     fontFamily: 'Arial',
-    lineHeight: 27,
-    marginBottom: 20,
+    lineHeight: '10@s',
+    marginBottom: '15@s',
+
   }
 
   
