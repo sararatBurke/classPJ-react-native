@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Text, View, ScrollView } from 'react-native';
+import { Text, View, ScrollView, TouchableOpacity } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
 
 
@@ -26,12 +26,13 @@ export default function App() {
 
           <ScrollView    
             horizontal={true} 
-            showsHorizontalScrollIndicator={false}  >
+            showsHorizontalScrollIndicator={false}>
             <Text style={styles.navButton}>Home</Text>
             <Text style={styles.navButton}>About</Text>
             <Text style={styles.navButton}>Portfolio</Text>
             <Text style={styles.navButton}>Service</Text>
             <Text style={styles.navButton}>Contact</Text>
+           
           </ScrollView>
 
         </LinearGradient>
@@ -47,14 +48,15 @@ export default function App() {
               <Text style={styles.content}>You may use this template on any site, anywhere, for free just please leave the link back to me in the footer. This template validates XHTML Strict 1.0, CSS Validates as well; enjoy `:)`</Text> 
               <Text style={styles.content}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer mi. Vivamus sit amet neque vitae sapien bibendum sodales. Curabitur elementum. Duis imperdiet. Donec eleifend porttitor sapien. Praesent leo. Quisque auctor velit sed tellus. Suspendisse potenti. Aenean laoreet imperdiet nunc. Donec commodo suscipit dolor. Aenean nibh. Sed id odio. Aliquam lobortis risus ut felis. Sed vehicula pellentesque quam.</Text>
             </View>
+
             <View style={styles.right}>
-              <Text>Links:</Text>
-              <Text>Web Design</Text>
-              <Text>Templates</Text>
-              <Text>Marketing</Text>
-              <Text>SEO</Text>
-              <Text>Programming</Text>
-              <Text>Consulting</Text>
+              <Text style={styles.headBodyLink}>Links:</Text>
+              <TouchableOpacity><Text style={styles.bodyLink}>Web Design</Text></TouchableOpacity>
+              <TouchableOpacity><Text style={styles.bodyLink}>Templates</Text></TouchableOpacity>
+              <TouchableOpacity><Text style={styles.bodyLink}>Marketing</Text></TouchableOpacity>
+              <TouchableOpacity><Text style={styles.bodyLink}>SEO</Text></TouchableOpacity>
+              <TouchableOpacity><Text style={styles.bodyLink}>Programming</Text></TouchableOpacity>
+              <TouchableOpacity><Text style={styles.bodyLink}>Consulting</Text></TouchableOpacity>
             </View>
           </View>
 
@@ -131,21 +133,32 @@ const styles = ScaledSheet.create({
     flex: 1,
     width: '100%',
     backgroundColor: '#869c81', 
-    padding: '12@s', 
-    
+    padding: '12@s'   
   },
 
   bodyHead:{
     fontFamily:'Verdana',
     color: '#2C4969',
     fontWeight: 'bold',
-    fontSize: '15@s',
+    fontSize: '15@s'
   },
-
   topContent:{
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
+  headBodyLink: {
+    fontWeight: 'bold',
+    fontSize: '8@s',
+    marginVertical: '20@s'
+    
+  },
+  bodyLink: {
+    fontSize: '7@s',
+    fontWeight: 'bold',
+    marginBottom: '5@s',
+    color: '#252F33',
+  },
+
   left:{
     width: '260@s'
   },
@@ -156,8 +169,7 @@ const styles = ScaledSheet.create({
     fontFamily: 'Arial',
     fontSize: '7@s',
     lineHeight: '14@s',
-    marginBottom: '15@s',
-
+    marginBottom: '15@s'
   }
 
   
