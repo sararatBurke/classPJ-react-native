@@ -148,14 +148,14 @@ const styles = ScaledSheet.create({
   },
   headBodyLink: {
     fontWeight: 'bold',
-    fontSize: '8@s',
-    marginVertical: '20@s'
+    fontSize: '7@s',
+    marginVertical: '17@s'
     
   },
   bodyLink: {
-    fontSize: '7@s',
+    fontSize: '6@s',
     fontWeight: 'bold',
-    marginBottom: '5@s',
+    marginBottom: '4@s',
     color: '#252F33',
   },
 
@@ -167,7 +167,7 @@ const styles = ScaledSheet.create({
   },
   content:{
     fontFamily: 'Arial',
-    fontSize: '7@s',
+    fontSize: '6.3@s',
     lineHeight: '14@s',
     marginBottom: '15@s'
   }
