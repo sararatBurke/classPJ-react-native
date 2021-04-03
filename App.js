@@ -90,22 +90,22 @@ const styles = ScaledSheet.create({
     color: '#252F33',
     fontWeight: 'bold',
     fontFamily: 'Georgia',
-    fontSize: '20@s',
+    fontSize: '27@s',
 
     marginLeft: '15@s',
-    marginTop: '10@s' 
+    marginTop: '25@s' 
   },
 
   subHead:{
     color: '#daeff1',
     fontWeight: 'bold',
     fontFamily: 'Georgia',
-    fontSize: '8@s',
+    fontSize: '12@s',
     marginLeft: '30@s', 
   },
 
   navBG: {
-    height: '18@s',
+    height: 48,
     paddingHorizontal: '10@s',
   },
 
@@ -121,10 +121,11 @@ const styles = ScaledSheet.create({
   },
 
   navButton:{
-    marginHorizontal: '15@s',
-    paddingTop: '5@s',
+  
+    paddingHorizontal: '10@s',
+    paddingVertical: '8@mvs0.1',
     fontFamily:'Helvetica',
-    fontSize: '8@s',
+    fontSize: 25,
     color: '#252F33',
     justifyContent: 'center',
   },
@@ -140,7 +141,7 @@ const styles = ScaledSheet.create({
     fontFamily:'Verdana',
     color: '#2C4969',
     fontWeight: 'bold',
-    fontSize: '15@s'
+    fontSize: 35
   },
   topContent:{
     flexDirection: 'row',
@@ -148,28 +149,28 @@ const styles = ScaledSheet.create({
   },
   headBodyLink: {
     fontWeight: 'bold',
-    fontSize: '7@s',
-    marginVertical: '17@s'
+    fontSize: '20@mvs0.1',
+    marginVertical: '15@s'
     
   },
   bodyLink: {
-    fontSize: '6@s',
+    fontSize: '13@mvs0.6',
     fontWeight: 'bold',
-    marginBottom: '4@s',
+    marginBottom: '7@s',
     color: '#252F33',
   },
 
   left:{
-    width: '260@s'
+    width: '75%'
   },
   right:{
-    width: '50@s'
+    width: '100@mvs1'
   },
   content:{
     fontFamily: 'Arial',
-    fontSize: '6.3@s',
-    lineHeight: '14@s',
-    marginBottom: '15@s'
+    fontSize: 23,
+    lineHeight: '40@mvs0.1',
+    marginBottom: '25@mvs0.2'
   }
 
   
