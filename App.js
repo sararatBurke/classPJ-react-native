@@ -27,11 +27,11 @@ export default function App() {
           <ScrollView    
             horizontal={true} 
             showsHorizontalScrollIndicator={false}>
-            <Text style={styles.navButton}>Home</Text>
-            <Text style={styles.navButton}>About</Text>
-            <Text style={styles.navButton}>Portfolio</Text>
-            <Text style={styles.navButton}>Service</Text>
-            <Text style={styles.navButton}>Contact</Text>
+            <TouchableOpacity><Text style={styles.navButton}>Home</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navButton}>About</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navButton}>Portfolio</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navButton}>Service</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navButton}>Contact</Text></TouchableOpacity>
            
           </ScrollView>
 
